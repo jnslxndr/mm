@@ -409,6 +409,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = mm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = io.lea.mm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,6 +423,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = mm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = io.lea.mm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -472,6 +474,7 @@
 				B475492A1BBA822D000356FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B475492B1BBA822D000356FD /* Build configuration list for PBXNativeTarget "mmTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +483,7 @@
 				B475492D1BBA822D000356FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

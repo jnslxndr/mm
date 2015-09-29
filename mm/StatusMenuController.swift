@@ -17,9 +17,31 @@ class StatusMenuController: NSObject {
   var timer: NSTimer! = nil
   var sys = System()
   let icon : NSImage!
-
+  var _interval = 1.0
+  var interval:Double {
+    set {
+      _interval = max(min(newValue, 10),0.25)
+    }
+    get {
+      return _interval
+    }
+  }
+  
   internal override init() {
+    
     icon = NSImage.init(size: NSSize(width: 4,height: 18))
+    
+    super.init()
+
+    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaultInterval = defaults.doubleForKey("interval")
+    
+    if defaultInterval == 0.0 {
+      saveInterval()
+    }
+    
+    interval = defaultInterval
+    
 //    print("// MACHINE STATUS")
 //    
 //    print("\n-- CPU --")
@@ -33,6 +55,11 @@ class StatusMenuController: NSObject {
 //    print("\tNICE:            \(Int(cpuUsage.nice))%")
   }
   
+  private func saveInterval() {
+    let defaults = NSUserDefaults.standardUserDefaults()
+    defaults.setDouble(interval, forKey: "interval")
+  }
+  
   override func awakeFromNib() {
 
     statusItem.image = icon
@@ -43,9 +70,7 @@ class StatusMenuController: NSObject {
     timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
     
   }
-  
-  var toggle = false
-  
+
   func tick(timer: NSTimer) {
     NSLog("tick")
     let cpu = sys.usageCPU()

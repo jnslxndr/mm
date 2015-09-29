@@ -231,6 +231,7 @@
 		4C543D131A08396700C5D9B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = beltex;
 				TargetAttributes = {
