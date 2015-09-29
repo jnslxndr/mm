@@ -11,8 +11,6 @@
 		B47549161BBA822C000356FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47549151BBA822C000356FD /* Assets.xcassets */; };
 		B47549191BBA822C000356FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47549171BBA822C000356FD /* MainMenu.xib */; };
 		B47549241BBA822D000356FD /* mmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47549231BBA822D000356FD /* mmTests.swift */; };
-		B47549301BBA87B6000356FD /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475492E1BBA87B6000356FD /* QuotesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B47549311BBA87B6000356FD /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B475492F1BBA87B6000356FD /* QuotesViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		B47549351BBA9239000356FD /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47549341BBA9239000356FD /* StatusMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		B47549421BBAA7D8000356FD /* SystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B475493D1BBAA7A8000356FD /* SystemKit.framework */; };
 		B47549431BBAA7D8000356FD /* SystemKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B475493D1BBAA7A8000356FD /* SystemKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -79,8 +77,6 @@
 		B475491F1BBA822D000356FD /* mmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47549231BBA822D000356FD /* mmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmTests.swift; sourceTree = "<group>"; };
 		B47549251BBA822D000356FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B475492E1BBA87B6000356FD /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
-		B475492F1BBA87B6000356FD /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
 		B47549341BBA9239000356FD /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		B47549361BBAA7A7000356FD /* SystemKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SystemKit.xcodeproj; path = libs/SystemKit/SystemKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +124,6 @@
 			children = (
 				B47549131BBA822C000356FD /* AppDelegate.swift */,
 				B47549341BBA9239000356FD /* StatusMenuController.swift */,
-				B475492E1BBA87B6000356FD /* QuotesViewController.swift */,
-				B475492F1BBA87B6000356FD /* QuotesViewController.xib */,
 				B47549151BBA822C000356FD /* Assets.xcassets */,
 				B47549171BBA822C000356FD /* MainMenu.xib */,
 				B475491A1BBA822D000356FD /* Info.plist */,
@@ -268,7 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47549311BBA87B6000356FD /* QuotesViewController.xib in Resources */,
 				B47549161BBA822C000356FD /* Assets.xcassets in Resources */,
 				B47549191BBA822C000356FD /* MainMenu.xib in Resources */,
 			);
@@ -290,7 +283,6 @@
 			files = (
 				B47549351BBA9239000356FD /* StatusMenuController.swift in Sources */,
 				B47549141BBA822C000356FD /* AppDelegate.swift in Sources */,
-				B47549301BBA87B6000356FD /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
